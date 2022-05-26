@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiSelect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="div one-column">
+            <div class="select-one">
+                <div class="select-field">
+                    <input type="text" name="" placeholder="Select industry" id="" class="input-select">
+                    <span class="down-arrow">&#9660;</span>
+                </div>
+            </div>
+            <div class="select-two">
+                <fieldset class="select-field active">
+                    <legend>Industry</legend>
+                    <input type="text" name="" placeholder="2 items selected" id="" class="input-select">
+                    <span class="down-arrow">&#9650;</span>
+                </fieldset>
+                
+                <div class="items">
+                    <label for="Food-beverage" class="item">
+                        <input type="checkbox" name="" id="Food-beverage">
+                        <p>Food / beverage</p> 
+                    </label>
+                    <label for="Travel" class="item">
+                        <input type="checkbox" name="" id="Travel">
+                        <p>Travel</p> 
+                    </label>
+                    <label for="Automotive" class="item active">
+                        <input type="checkbox" name="" id="Automotive" checked>
+                        <div>
+                            <p>Automotive</p> 
+                            <p class="selected">1 item selected</p> 
+                        </div>
+                    </label>
+                    <label for="Education" class="item active">
+                        <input type="checkbox" name="" id="Education" checked>
+                        <p>Education</p>  
+                    </label>
+                    <label for="Government" class="item">
+                        <input type="checkbox" name="" id="Government">
+                        <p>Government</p> 
+                    </label>
+                    <label for="Nonprofit" class="item">
+                        <input type="checkbox" name="" id="Nonprofit">
+                        <p>Nonprofit</p> 
+                    </label>
+                    <label for="Other" class="item">
+                        <input type="checkbox" name="" id="Other">
+                        <p>Other</p> 
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="div two-column">
+            <div class="select-three">
+                <div class="select-field">
+                    <input type="text" name="" placeholder="Pick desired amenities" id="" class="input-select">
+                    <span class="down-arrow">&#9660;</span>
+                </div>
+            </div>
+            <div class="select">
+                <fieldset class="select-four">
+                    <legend>Multiline amenities picked</legend>
+                    <div class="preset"> 
+                        <span class="active">Free parking</span>
+                        <span>Pool</span>
+                        <span>Kitchen</span>
+                        <span>Bathroom</span>
+                        <span>Pet-friendly</span>
+                        <span>Free Wi-Fi</span>
+                        <span>Gym</span>
+                        <span>Breakfast</span>
+                    </div>
+                    <span class="delete">&#10006;</span>
+                </fieldset>
+            </div>
+            <div class="select">
+                <fieldset class="select-five">
+                    <legend>Amentities</legend>
+                    <div class="preset">
+                        <span>Gym</span>
+                        <span>Breakfast</span>
+                    </div>
+                    <div class="search">
+                        <i class="fa fa-search"></i>
+                        <input type="search" id="site-search" placeholder="People, places, events" name="">
+                    </div>
+                    <div class="items">
+                        <label for="Bathroom" class="item">
+                            <input type="checkbox" name="" id="Bathroom">
+                            <p>Bathroom</p> 
+                        </label>
+                        <label for="Breakfast" class="item active">
+                            <input type="checkbox" name="" id="Breakfast" checked>
+                            <p>Breakfast</p> 
+                        </label>
+                        <label for="Gym" class="item active">
+                            <input type="checkbox" name="" id="Gym" checked>
+                            <p>Gym</p> 
+                        </label>
+                        <label for="Free parking" class="item">
+                            <input type="checkbox" name="" id="Free parking">
+                            <p>Free parking</p>  
+                        </label>
+                        <label for="Free Wi-Fi" class="item">
+                            <input type="checkbox" name="" id="Free Wi-Fi">
+                            <p>Free Wi-Fi</p> 
+                        </label>
+                        <label for="Pet-friendly" class="item">
+                            <input type="checkbox" name="" id="Pet-friendly">
+                            <p>Pet-friendly</p> 
+                        </label>
+                        <span></span>
+                        <label for="paper" class="item">
+                            <input type="checkbox" name="" id="paper">
+                            <p>I don’t need a toilet paper</p> 
+                        </label>
+                        <label for="set-time" class="item">
+                            <input type="checkbox" name="" id="set-time">
+                            <p>Please, wake me up at <span class="colortext">Set time</span></p> 
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
